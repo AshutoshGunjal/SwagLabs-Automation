@@ -33,20 +33,7 @@ This command installs all the necessary packages defined in package.json, includ
 
 Explain the structure of your project directory and the purpose of each folder:
 
-├── src/
-│ ├── pages/
-│ │ ├── LoginPage.ts # Page Object Model for login page
-│ │ ├── InventoryPage.ts # Page Object Model for inventory page
-│ │ ├── CartPage.ts # Page Object Model for cart page
-│ │ └── CheckoutPage.ts # Page Object Model for checkout page
-│ ├── tests/
-│ │ └── checkout.spec.ts # Test file for checkout flow
-│ ├── utils/
-│ │ └── assertions.ts # Custom assertion functions
-│ └── playwright.config.ts # Playwright configuration file
-├── node_modules/ # Installed dependencies (not included in repository)
-├── package.json # Project manifest and dependencies
-└── tsconfig.json # TypeScript configuration
+![diagram (2)](https://github.com/AshutoshGunjal/SwagLabs-Automation/assets/43187740/34387e5e-825a-4da8-b865-71fe8e15c6f0)
 
 ## Running Tests
 
