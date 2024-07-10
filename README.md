@@ -43,7 +43,7 @@ To run the automated tests, execute the following command:
 npx playwright test
 ```
 
-This comman runs the tests defined in the 'tests' directory using Playwright and generates reports in JSON and HTML formats as configured.
+This command runs the tests defined in the 'tests' directory using Playwright and generates reports in JSON and HTML formats as configured.
 
 ## Reporting
 
