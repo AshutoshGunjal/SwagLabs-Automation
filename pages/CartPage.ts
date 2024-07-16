@@ -18,4 +18,20 @@ export class CartPage {
   async proceedToCheckout() {
     await this.checkoutButton.click();
   }
+
+  async calculateTotalPrice() {
+    const prices = await this.cartItems
+      .locator(".inventory_item_price")
+      .allInnerTexts();
+    const totalPrice = prices.reduce((sum, price) => {
+      return sum + parseFloat(price.replace("$", ""));
+    }, 0);
+    return totalPrice;
+  }
+
+  async verifyTotalPriceWithinBudget(budget: number) {
+    // Verify that the total price is within the budget
+    const totalPrice = await this.calculateTotalPrice();
+    expect(totalPrice).toBeLessThanOrEqual(budget);
+  }
 }

@@ -5,6 +5,7 @@ import { CartPage } from "../pages/CartPage";
 import { CheckoutPage } from "../pages/CheckoutPage";
 
 test("Complete Checkout Flow on Swag Labs", async ({ page }) => {
+  // instances of the page objects
   const loginPage = new LoginPage(page);
   const inventoryPage = new InventoryPage(page);
   const cartPage = new CartPage(page);
